@@ -41,11 +41,25 @@ const dateRange = ref(['2024-01-01', `2024-10-01`])
 const isYear = ref(false)
 
 const regionMap = {
+  '南宁市': {
+    code: '4501',
+    databaseName: 'comm_nn',
+    originDataBaseName: 'yldy_nn',
+    drgFundDatabaseName: 'drgs_fund_nn',
+    isComm33: false,
+  },
   '梧州市': {
     code: '4504',
     databaseName: 'comm_wz',
     originDataBaseName: 'yldy_wz',
     drgFundDatabaseName: 'drgs_fund_wz',
+    isComm33: false,
+  },
+  '玉林市': {
+    code: '4509',
+    databaseName: 'comm_yl',
+    originDataBaseName: 'yldy_yl',
+    drgFundDatabaseName: 'drgs_fund_yl',
     isComm33: false,
   },
 }
