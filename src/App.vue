@@ -27,7 +27,9 @@ const scriptMap = {
   INSERT_DETAIL_INTO_COMM,
 }
 const regionOptions = [
+  '南宁市',
   '梧州市',
+  '玉林市',
 ]
 
 const sqlScriptName = ref('DW_MEDICAL')
@@ -83,6 +85,8 @@ const onGenerate = () => {
 
   script.value = scriptMap[sqlScriptName.value](payload)
 }
+
+onGenerate()
 </script> 
 
 <template>
